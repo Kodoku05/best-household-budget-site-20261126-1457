@@ -1,0 +1,28 @@
+/* Dashboard cards are deliberately compact so the household overview scans in one desktop glance. */
+.page-content{padding-top:16px}
+.page-heading{margin-bottom:13px}
+.metric-grid{margin-bottom:10px}
+.metric-card{height:90px;padding-top:11px;padding-bottom:9px}
+.dash-grid .panel{min-height:0}
+.dash-grid .spending-panel{min-height:190px}
+.dash-grid .donut{width:124px;height:124px}
+.dash-grid .donut-wrap{gap:12px}
+.dash-grid .panel-bottomline{padding-top:6px}
+.dash-grid .bills-snapshot,.dash-grid .goals-snapshot{padding:12px 14px 10px}
+.dash-grid .bill-preview-list{margin:5px 0 3px}
+.dash-grid .bill-preview{padding:3px 0}
+.dash-grid .bill-date{height:29px}
+.dash-grid .mini-goal-list{margin-top:9px;gap:8px}
+.dash-grid .mini-goal-main .progress-track{margin:3px 0}
+.mini-budget-top strong{flex:1}
+.mini-budget-total{font-size:8px;color:#7f887b;white-space:nowrap}
+.mini-budget-total i{font-style:normal;color:#b4b3a9}
+.mini-budgets{gap:7px;margin:11px 0 9px}
+.mini-budget .progress-track{margin:3px 0 0 30px}
+.recent-list{margin-top:10px}
+@media(max-width:760px){
+  .page-content{padding-top:18px}
+  .page-heading{margin-bottom:14px}
+  .metric-grid{margin-bottom:9px}
+  .metric-card{height:92px}
+}

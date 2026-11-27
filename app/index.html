@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f1">
+  <title>Hearth Ledger — home, in balance</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./dashboard-layout.css">
+  <script defer src="./data.js"></script>
+  <script defer src="./store.js"></script>
+  <script defer src="./charts.js"></script>
+  <script defer src="./views.js"></script>
+  <script defer src="./main.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#dashboard" aria-label="Hearth Ledger home"><span class="brand-mark">h<span>·</span></span><span class="brand-name">hearth<span>ledger</span></span></a>
+      <div class="home-label">THE MORROW HOME</div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="#dashboard" data-page="dashboard"><span class="nav-icon">◫</span>Overview</a>
+        <a href="#transactions" data-page="transactions"><span class="nav-icon">⇄</span>Transactions</a>
+        <a href="#budgets" data-page="budgets"><span class="nav-icon">▤</span>Budgets</a>
+        <a href="#bills" data-page="bills"><span class="nav-icon">▣</span>Bills <span class="nav-count" id="bill-count">3</span></a>
+        <a href="#goals" data-page="goals"><span class="nav-icon">◎</span>Savings goals</a>
+        <a href="#reports" data-page="reports"><span class="nav-icon">⌁</span>Reports</a>
+      </nav>
+      <div class="sidebar-note"><div class="note-spark">✳</div><strong>A calmer money month</strong><p>Small, steady choices make room for what matters at home.</p><span>YOUR FAMILY PLAN · 2026</span></div>
+      <button class="reset-button" id="reset-demo" type="button"><span>↺</span> Reset demo data</button>
+      <div class="sidebar-footer"><span class="avatar">JM</span><span><strong>Jordan Morrow</strong><small>Household admin</small></span><span class="more">···</span></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <div class="breadcrumb"><span>Household</span><b>/</b><strong id="crumb-page">Overview</strong></div>
+        <div class="topbar-actions"><span class="sync-status"><i></i> All changes saved</span><label class="month-control"><span class="sr-only">Choose month</span><span class="calendar-icon">▦</span><select id="month-select" aria-label="Choose month"><option value="2026-11">November 2026</option><option value="2026-10">October 2026</option></select><span class="chevron">⌄</span></label></div>
+      </header>
+      <div id="page-content" class="page-content" aria-live="polite"></div>
+      <footer class="page-footer"><span>Hearth Ledger <span class="footer-dot">·</span> Money for the life you share</span><span>Private by design <span class="lock-icon">▣</span></span></footer>
+    </main>
+  </div>
+</body>
+</html>
